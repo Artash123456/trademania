@@ -1,0 +1,25 @@
+import { FC, MouseEventHandler } from 'react';
+const Logo: FC<{
+  onClick?: MouseEventHandler<HTMLOrSVGElement>;
+  color?: string;
+  className?: string;
+}> = ({ onClick, color = '#3968FC', className }) => {
+  return (
+    <svg
+      className={className}
+      width="45"
+      height="45"
+      viewBox="0 0 45 45"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      onClick={onClick}
+    >
+      <path
+        d="M30.2748 0.777832V4.02783H38.9451L27.0391 15.9862V4.02783V0.777832H9.72625C4.77578 0.777832 0.765625 4.80561 0.765625 9.77783V44.6667H11.4133L14.6352 41.4306H6.26922L26.0849 21.5278H39.028L19.2123 41.4306H19.1985L15.9766 44.6667H35.6402C40.5077 44.6667 44.4625 40.6945 44.4625 35.8056V0.777832H30.2748ZM9.72625 4.01394H21.7429L3.98758 21.8334V9.77783C3.98758 6.59728 6.54578 4.02783 9.71242 4.02783L9.72625 4.01394ZM23.8171 19.2084L3.98758 39.1251V26.4167L23.8033 6.51394V19.2223L23.8171 19.2084ZM29.3207 18.2639L41.2267 6.30561V18.2639H29.3207ZM34.7966 41.4028H23.7756L41.2267 23.8751V34.9445C41.2267 38.5139 38.3505 41.4028 34.7966 41.4028Z"
+        fill={color}
+      />
+    </svg>
+  );
+};
+
+export default Logo;

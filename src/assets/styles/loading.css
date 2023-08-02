@@ -1,0 +1,73 @@
+.loading-anim {
+  animation-name: loading-items;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+.logo-loading {
+  animation-name: logo-loading;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+@keyframes logo-loading {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes loading-items {
+  0% {
+    opacity: 1;
+  }
+  15% {
+    opacity: 0.8;
+  }
+  30% {
+    opacity: 0.6;
+  }
+  45% {
+    opacity: 0.4;
+  }
+  60% {
+    opacity: 0.2;
+  }
+  75% {
+    opacity: 0.4;
+  }
+  90% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 0.8;
+  }
+}
+@keyframes drag-anime {
+  0% {
+    transform: rotate(0);
+  }
+  10% {
+    transform: rotate(0.2deg);
+  }
+  20% {
+    transform: rotate(0.4deg);
+  }
+  40% {
+    transform: rotate(0.2deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  70% {
+    transform: rotate(-0.2deg);
+  }
+  80% {
+    transform: rotate(-0.4deg);
+  }
+  90% {
+    transform: rotate(-0.2deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}

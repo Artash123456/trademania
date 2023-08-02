@@ -1,0 +1,36 @@
+@media (max-width: 1750px) {
+  * {
+    font-size: 9px;
+  }
+  .container {
+    padding: 20px 20px;
+  }
+}
+@media (max-width: 1500px) {
+  * {
+    font-size: 8px;
+  }
+  .container {
+    padding: 16px;
+  }
+  .button-navigation > span {
+    padding: 2px 6px;
+  }
+}
+@media (max-width: 1250px) {
+  * {
+    font-size: 7px;
+  }
+
+  .edit-widgets .warn-btn {
+    padding: 2px !important;
+  }
+  .edit-widgets .warn-btn > span {
+    width: 50px;
+    height: 20px;
+    border-radius: 4px;
+  }
+  .edit-widgets .warn-btn > span:not(:last-child) {
+    margin-right: 3px;
+  }
+}
